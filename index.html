@@ -342,11 +342,56 @@
 </main>
 <div class="backdrop  is-hidden" data-modal>
   <div class="modal">
-    <button class="vector-modal" name="button" data-modal-close>
+  <button class="vector-modal" name="button" data-modal-close>
     <svg width = "11" height = "11"  >
       <use href="./images/symbol-defs.svg#Vector2"></use>
     </svg>
-    </button>
+   </button>
+   
+   <h3 class="form-hd">Оставьте свои данные, мы вам перезвоним</h3>
+    <form class="form-container">
+     <div class="form-field">
+     <label for="name">Имя</label>
+      <svg class="icon-form"   width = "12" height = "12" >
+        <use href="./images/icons.svg#Name"></use>
+      </svg>
+      <input type="text" class="otstyp" name="name" id="name"  autofocus/>
+     </div>
+   <div class="form-field">
+    <label for="tel">Телефон</label>
+    <svg class="icon-form"   width = "13" height = "13" >
+      <use href="./images/icons.svg#tel"></use>
+    </svg>
+   <input type="tel" class="otstyp" name="tel" id="tel" autofocus />
+    </div>
+   <div class="form-mail">
+    <label for="mail">Почта</label>
+    <svg class="icon-form"   width = "15" height = "12">
+      <use href="./images/icons.svg#email"></use>
+    </svg>
+    <input type="mail"  class="otstyp" name="mail" id="mail" autofocus />
+   </div>
+   
+   <div class="com-field">
+    <label for="comment">Комментарий</label>
+   <textarea class="comment"   name="comment" id="comment" crow="8" placeholder="Введите текст"></textarea>
+   </div>
+   <div class="chek-container">
+   <label class="chek">
+   <input type="checkbox" class="checkbox" name="" value="" id="">
+   <span class="icon-chek"> </span>
+  </label>
+  <div class="sogl-container">
+  <span class="name-chek">Соглашаюсь с рассылкой и принимаю <span class="sogl" style ="color: #2196f3">Условия договора</span></span>
+</div>
+</div>
+
+  <div class="but-centre">
+   <button  class="but-modal" type="submit">Отправить</button>
+ </div>
+    </form>
+  
+   
   </div>
   </div>
 
@@ -400,6 +445,22 @@
  </li>
  </ul>
 </div>
+
+
+
+
+<form >
+<p class="from-name">Подпишитесь на рассылку</p>
+  <div class="all-form">
+ <label for="mail"  class="form-label"></label>  
+  <input type="email" class="from-input"  name="mail" placeholder="   E-mail  " /> 
+  <button class="form-btn" type="submit">Подписаться
+    <svg  class="icon-btn" width="24"  height="24">
+      <use   href="./images/telegram.svg#telegram"></use>
+    </svg>
+  </button>
+</div>
+</form>
 
 </div>
 </div>
