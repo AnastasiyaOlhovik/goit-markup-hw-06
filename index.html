@@ -342,44 +342,43 @@
 </main>
 <div class="backdrop  is-hidden" data-modal>
 
-<div class="modal"  autocomplete="off">
+<div class="modal">
   <button class="vector-modal" name="button" data-modal-close>
     <svg  class="vector-icon" width = "11" height = "11"  >
       <use href="./images/symbol-defs.svg#Vector2"></use>
     </svg>
    </button>
-  
-<h3 class="form-hd">Оставьте свои данные, мы вам перезвоним</h3>
-    <form class="form-container">
+  <h3 class="form-hd">Оставьте свои данные,мы вам перезвоним</h3>
+    <form>
      <div class="form-field">
      <label for="name">Имя</label>
       <svg class="icon-form"   width = "12" height = "12" >
         <use href="./images/icons.svg#Name"></use>
       </svg>
-      <input type="text" class="otstyp" name="name" id="name"  autofocus/>
+      <input type="text" class="otstyp" name="name" id="name" />
      </div>
    <div class="form-field">
     <label for="tel">Телефон</label>
     <svg class="icon-form"   width = "13" height = "13" >
       <use href="./images/icons.svg#tel"></use>
     </svg>
-   <input type="tel" class="otstyp" name="tel" id="tel" autofocus />
+   <input type="tel" class="otstyp" name="tel" id="tel"  />
     </div>
    <div class="form-mail">
-    <label for="mail">Почта</label>
+    <label>Почта</label>
     <svg class="icon-form"   width = "15" height = "12">
       <use href="./images/icons.svg#email"></use>
     </svg>
-    <input type="mail"  class="otstyp" name="mail" id="mail" autofocus />
+    <input type="email"  class="otstyp" name="email" />
    </div>
    
    <div class="com-field">
     <label for="comment">Комментарий</label>
-   <textarea class="comment"   name="comment" id="comment" crow="8" placeholder="Введите текст"></textarea>
+   <textarea class="comment"   name="comment" id="comment"  placeholder="Введите текст"></textarea>
    </div>
    <div class="chek-container">
    <label class="chek">
-   <input type="checkbox" class="checkbox" name="" value="" id="">
+   <input type="checkbox" class="checkbox" name="comment" value="">
    <span class="icon-chek"> </span>
   </label>
   <div class="sogl-container">
@@ -391,16 +390,11 @@
    <button  class="but-modal" type="submit">Отправить</button>
  </div>
     </form>
-  
-   
   </div>
   </div>
-
-
 <footer>
-  
   <div class="footer">
-    <div class="container  footer-container">
+       <div class="container  footer-container">
       <div class="podval">
      <a href="./index.html" class="logo logos" lang="en" style="color: #2196F3;">Web<span class="logo-second name  logos">Studio</span></a>
       <address>
@@ -447,27 +441,22 @@
  </ul>
 </div>
 
-
-
-
-<form class="cont-form">
+<form class="form-container" >
 <p class="from-name">Подпишитесь на рассылку</p>
   <div class="all-form">
- <label for="mail"  class="form-label"></label>  
-<input type="email" class="from-input"  name="mail" placeholder="   E-mail  " /> 
+<input type="email" class="from-input"  name="mail" placeholder="   E-mail  " />   
+<div class="centre-btn">
   <button class="form-btn" type="submit">Подписаться
     <svg  class="icon-btn" width="24"  height="24">
       <use   href="./images/telegram.svg#telegram"></use>
     </svg>
   </button>
-  </div>
+</div>
+</div>
 </form>
-
 </div>
 </div>
-
 </footer>
-
 <script src="./js/modal.js"></script>
 </body>
 </html>
