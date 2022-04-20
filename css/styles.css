@@ -76,7 +76,7 @@ h1, h2, h3, h4, h5, h6,p{margin: 0px;
         left: 0;
         display: block;
         width: 100%;
-        height: 2px;
+        height: 4px;
         background-color: #2196F3;
         border-radius: 2px;}
 
@@ -185,8 +185,9 @@ text-align: center;}
 position: relative;
 top:50%;
 left:50%; 
-padding: 40px; 
-width:528px;
+padding: 40px;
+height: 501px; 
+width:448px;
 background-color: #FFFFFF;
 transform:  translate(-50%, -50%) scale(1);
 transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);}
@@ -825,22 +826,18 @@ color: rgba(255, 255, 255, 0.6)}
         letter-spacing:0.03em;}
     
         .centre-btn {
-            justify-content: center;
-        }   
+            justify-content: center;}   
 
-
-
-
-        .form-hd {
-     justify-content: center;
-      display: flex;
-      align-items: center;
+     .form-hd {
+      text-align: center;
       margin-bottom: 12px;
       border-top: 40px;
       height: 23px;
+      line-height: 1.15;
       font-weight: bold;
       font-size: 20px;
-      letter-spacing: 0.12em;}
+      letter-spacing: 0.03em;
+      color:rgba(33, 33, 33, 1);}
 
       .textarea {
         resize: none;}
@@ -849,20 +846,19 @@ color: rgba(255, 255, 255, 0.6)}
         position: relative;
         display: flex;
         flex-direction: column;
-        margin-bottom: 10px;
-        cursor: pointer;}
+        margin-bottom: 10px;}
     
   .form-mail{
-      position: relative;
-      display: flex;
+        position: relative;
+        display: flex;
         flex-direction: column;
-        margin-bottom: 10px;
-        cursor: pointer;}  
+        margin-bottom: 10px;}  
         
     .form-mail label{
         width: 41px;
         margin-bottom: 4px;
         font-size: 12px;
+        cursor: pointer;
         letter-spacing: 0.01em;
         color:  rgba(117, 117, 117, 1);}
         
@@ -881,7 +877,8 @@ color: rgba(255, 255, 255, 0.6)}
          margin-bottom: 4px;
          font-size: 12px;
          letter-spacing: 0.01em;
-         color:  rgba(117, 117, 117, 1);}
+         color:  rgba(117, 117, 117, 1);
+         cursor: pointer;}
          
          
     .form-field input {
@@ -898,45 +895,51 @@ color: rgba(255, 255, 255, 0.6)}
         transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
         cursor: pointer;}
 
-        .form-mail:focus .icon-form, 
-        .form-mail:hover .icon-form {
-            fill: #2196f3;
-            transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-            cursor: pointer;}    
+         
         
     .form-field input:focus,
-    .form-field input:hover{
+    .form-field input:hover {
         border: 1px solid #2196f3;
         transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        cursor: pointer;}    
-    
-    .form-mail:focus.icon-form, 
-    .form-mail:hover.icon-form {
+        cursor: pointer;}
+        
+        
+        
+    .form-mail:focus .icon-form, 
+    .form-mail:hover .icon-form {
             fill: #2196f3;
             transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-            cursor: pointer;}
-            
+            cursor: pointer;}  
+        
     .form-mail input:focus,
     .form-mail input:hover {
             border: 1px solid #2196f3;
             transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-            cursor: pointer;} 
-    
+            cursor: pointer;}
 
-        .com-field {
+    .com-field  textarea:focus-within,
+    .com-field  textarea:hover {
+            border: 1px solid #2196f3;
+            transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+            cursor: pointer;
+            outline: transparent;} 
+            
+            
+    .com-field {
         display: flex;
         flex-direction: column;}  
       
       .com-field  label{
-      margin-top: 10px;
+      margin-top: 0px;
       width: 80px;
       margin-bottom: 4px;
       font-size: 12px;
       letter-spacing: 0.01em;
+      cursor: pointer;
       color:  rgba(117, 117, 117, 1);}  
         
       .comment{
-          height: 120px;
+          height: 88px;
           resize: none;
           padding: 12px 16px;
           border: 1px solid rgba(33, 33, 33, 0.2);
@@ -958,7 +961,8 @@ color: rgba(255, 255, 255, 0.6)}
           height: 15px;
           border: 2px solid rgba(33, 33, 33, 1);
           border-radius: 4px;
-          cursor: pointer;} 
+          cursor: pointer;
+          transform: translateY(-3px);} 
       
           
       .checkbox:checked + .icon-chek {
@@ -973,10 +977,9 @@ color: rgba(255, 255, 255, 0.6)}
      .chek-container {
         display: flex;
         justify-content: center;
-        margin-top: 25px;}
+        margin-top: 20px;}
 
-     .sogl-container{
-         display: flex; }      
+         
     
     .sogl {
         text-decoration: underline;}
@@ -988,18 +991,18 @@ color: rgba(255, 255, 255, 0.6)}
         margin-bottom: 0;}
      
     .name-chek {
-        padding-left: 8px;
-        padding-top: 5px;
+        display: block;
+        margin-left: 7px;
         color: #757575;
         font-size: 14px;
         width: auto;
         height: 24px;
-        letter-spacing: 0.05em;}
+        letter-spacing: 0.03em;}
 
     .but-centre {
         justify-content: center;
         display: flex;
-        margin-top: 30px;}    
+        transform: translateY(37%);}    
         
 
     .but-modal{
@@ -1022,7 +1025,9 @@ color: rgba(255, 255, 255, 0.6)}
        left: 14px;
        display: inline-block;} 
         
+
    .otstyp {
-       padding-left:35px;}
+       padding-left: 35px;
+   }    
 
    .cont-form {margin-left: auto;}
